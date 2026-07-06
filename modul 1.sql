@@ -26,16 +26,16 @@ CREATE TABLE tr_penjualan (
 );
 
 REPLACE INTO pelanggan (id_customer, nama_customer, alamat) VALUES
-('P001', 'Surya Ramdhani', 'Mataram'),
-('P002', 'Dede Angrian', 'Lombok Barat'),
-('P003', 'Dodik Pratama', 'Lombok Tengah');
+('P001', 'Andi Saputra', 'Denpasar'),
+('P002', 'Rina Lestari', 'Bandung'),
+('P003', 'Fajar Nugroho', 'Yogyakarta');
 
 REPLACE INTO produk (kode_produk, nama_produk, harga) VALUES
-('PRD01', 'Kopi Robusta', 25000),
-('PRD02', 'Americano', 15000),
-('PRD03', 'Gula Aren Cair', 20000);
+('PRD01', 'Teh Melati', 12000),
+('PRD02', 'Cokelat Panas', 18000),
+('PRD03', 'Roti Bakar Keju', 22000);
 
 REPLACE INTO tr_penjualan (kode_transaksi, id_customer, kode_produk, jumlah_barang, harga_barang, diskon, tanggal_transaksi) VALUES
-('TR001', 'P001', 'PRD01', 1, 25000, 0, '2026-07-05'),
-('TR002', 'P002', 'PRD02', 2, 15000, 0, '2026-07-05'),
-('TR003', 'P003', 'PRD03', 1, 20000, 0, '2026-07-05');
+('TR001', 'P001', 'PRD01', 1, 12000, 0, '2026-07-05'),
+('TR002', 'P002', 'PRD02', 2, 18000, 0, '2026-07-05'),
+('TR003', 'P003', 'PRD03', 1, 22000, 0, '2026-07-05');
